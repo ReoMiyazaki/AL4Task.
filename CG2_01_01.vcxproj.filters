@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\3d">
+      <UniqueIdentifier>{d596683e-b956-48d4-b70e-2b799354662b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\3d">
+      <UniqueIdentifier>{8190079a-3b3b-4c01-9a5a-7454afae5e1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\audio">
+      <UniqueIdentifier>{80a02a51-d67e-454e-86e7-627076636271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\base">
+      <UniqueIdentifier>{2d015987-34c8-4fdd-9929-ab6c70d64686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\fps">
+      <UniqueIdentifier>{396a3da7-8953-4941-bb18-039f934b2e40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\input">
+      <UniqueIdentifier>{32f246b6-9991-4da4-9f1f-111213e1b02d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\math">
+      <UniqueIdentifier>{b7a3ab59-79af-4972-960a-03e02d8b7faf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\scene">
+      <UniqueIdentifier>{3a5b98dc-173e-4313-8f1f-62435dafabeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\audio">
+      <UniqueIdentifier>{aae69f9e-6163-41e6-82af-845000ec6977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\base">
+      <UniqueIdentifier>{cb4f1b1e-7d22-4bde-b400-f21720f5e466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\fps">
+      <UniqueIdentifier>{4c564f78-9755-4e58-8dcf-a6faad37aaf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\input">
+      <UniqueIdentifier>{e7e34774-65ae-4253-8dd8-bc0f85efadae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\math">
+      <UniqueIdentifier>{28f0778e-d9b5-4eff-b569-5c7331ed549b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\scene">
+      <UniqueIdentifier>{60173f55-eaed-43fe-a71e-63a11a6e5e9c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="3d\Model.cpp">
+      <Filter>ソース ファイル\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="3d\Object3d.cpp">
+      <Filter>ソース ファイル\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="3d\Sprite.cpp">
+      <Filter>ソース ファイル\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="3d\SpriteCommon.cpp">
+      <Filter>ソース ファイル\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\Audio.cpp">
+      <Filter>ソース ファイル\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="base\DirectXCommon.cpp">
+      <Filter>ソース ファイル\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\WinApp.cpp">
+      <Filter>ソース ファイル\base</Filter>
+    </ClCompile>
+    <ClCompile Include="fps\FPS.cpp">
+      <Filter>ソース ファイル\fps</Filter>
+    </ClCompile>
+    <ClCompile Include="input\Input.cpp">
+      <Filter>ソース ファイル\input</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Vector3.cpp">
+      <Filter>ソース ファイル\math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Vector4.cpp">
+      <Filter>ソース ファイル\math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Vector2.cpp">
+      <Filter>ソース ファイル\math</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\GameScene.cpp">
+      <Filter>ソース ファイル\scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="BasicVS.hlsl" />
+    <FxCompile Include="BasicPS.hlsl" />
+    <FxCompile Include="Resources\shaders\OBJPixelShader.hlsl" />
+    <FxCompile Include="Resources\shaders\OBJVertexShader.hlsl" />
+    <FxCompile Include="SpritePS.hlsl" />
+    <FxCompile Include="SpriteVS.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shaders\OBJShaderHeader.hlsli" />
+    <None Include="Resources\shaders\Basic.hlsli" />
+    <None Include="Sprite.hlsli" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3d\Model.h">
+      <Filter>ヘッダー ファイル\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="3d\Object3d.h">
+      <Filter>ヘッダー ファイル\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="3d\Sprite.h">
+      <Filter>ヘッダー ファイル\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="3d\SpriteCommon.h">
+      <Filter>ヘッダー ファイル\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\Audio.h">
+      <Filter>ヘッダー ファイル\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="base\DirectXCommon.h">
+      <Filter>ヘッダー ファイル\base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\WinApp.h">
+      <Filter>ヘッダー ファイル\base</Filter>
+    </ClInclude>
+    <ClInclude Include="fps\FPS.h">
+      <Filter>ヘッダー ファイル\fps</Filter>
+    </ClInclude>
+    <ClInclude Include="input\Input.h">
+      <Filter>ヘッダー ファイル\input</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Vector2.h">
+      <Filter>ヘッダー ファイル\math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Vector3.h">
+      <Filter>ヘッダー ファイル\math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Vector4.h">
+      <Filter>ヘッダー ファイル\math</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\GameScene.h">
+      <Filter>ヘッダー ファイル\scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
