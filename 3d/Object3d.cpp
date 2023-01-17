@@ -303,8 +303,17 @@ void Object3d::InitializeGraphicsPipeline()
 
 void Object3d::UpdateViewMatrix()
 {
-	// ビュー行列の更新
-	matView = XMMatrixLookAtLH(XMLoadFloat3(&eye), XMLoadFloat3(&target), XMLoadFloat3(&up));
+	// ビュー行列の生成
+	matView = XMMatrixLookAtLH(
+		XMLoadFloat3(&eye),
+		XMLoadFloat3(&target),
+		XMLoadFloat3(&up));
+
+	matProjection = XMMatrixPerspectiveFovLH(
+		100,
+		(float)1280 / 720,
+		0.1f, 100'000'000.0f
+	);
 }
 
 bool Object3d::Initialize()
@@ -362,6 +371,7 @@ void Object3d::Update()
 	}
 
 	// 定数バッファへデータ転送
+	UpdateViewMatrix();
 	ConstBufferDataB0* constMap = nullptr;
 	result = constBuffB0->Map(0, nullptr, (void**)&constMap);
 	constMap->mat = matWorld * matView * matProjection;	// 行列の合成

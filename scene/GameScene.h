@@ -61,28 +61,44 @@ private: // メンバ変数
 	SpriteCommon* spriteCommon = nullptr;
 	Audio* audio = nullptr;
 	
-
 	/// <summary>
 	/// ゲームシーン用
 	/// </summary>
-	Sprite* sprite = new Sprite();
-	XMFLOAT2 position = sprite->GetPosition();
+	Sprite* title = new Sprite();
+	XMFLOAT2 titlePos = title->GetPosition();
 
-	Sprite* sprite1 = new Sprite();
-	XMFLOAT2 position1 = sprite1->GetPosition();
+	Sprite* rule = new Sprite();
+	XMFLOAT2 rulePos = rule->GetPosition();
 
-	Sprite* sprite2 = new Sprite();
-	XMFLOAT2 position2 = sprite2->GetPosition();
+	Sprite* cle = new Sprite();
+	XMFLOAT2 clePos = cle->GetPosition();
 
-	int ischackFlag = 0;
+	Sprite* over = new Sprite();
+	XMFLOAT2 overPos = over->GetPosition();
 
-	Object3d* object3d = nullptr;
-	Object3d* object3d_2 = nullptr;
-	Model* model = nullptr;
-	Model* model2 = nullptr;
+	Sprite* font1 = new Sprite();
+	XMFLOAT2 font1Pos = font1->GetPosition();
 
+	Sprite* font2 = new Sprite();
+	XMFLOAT2 font2Pos = font2->GetPosition();
 
-	int soundCheckFlag = 0;
-	
+	Sprite* font3 = new Sprite();
+	XMFLOAT2 font3Pos = font3->GetPosition();
+
+	// 当たったかどうか
+	int isHit = 0;
+
+	Object3d* player = nullptr;
+	Object3d* key = nullptr;
+	Object3d* skydome = nullptr;
+
+	Model* playerModel = nullptr;
+	Model* keyModel = nullptr;
+	Model* skydomeModel = nullptr;
+
+	int scene = 0;
+	int time = 180;
+
+	int limit = 0;
 };
 
