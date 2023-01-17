@@ -31,9 +31,6 @@
     <Filter Include="ソース ファイル\input">
       <UniqueIdentifier>{32f246b6-9991-4da4-9f1f-111213e1b02d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\math">
-      <UniqueIdentifier>{b7a3ab59-79af-4972-960a-03e02d8b7faf}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\scene">
       <UniqueIdentifier>{3a5b98dc-173e-4313-8f1f-62435dafabeb}</UniqueIdentifier>
     </Filter>
@@ -54,6 +51,15 @@
     </Filter>
     <Filter Include="ヘッダー ファイル\scene">
       <UniqueIdentifier>{60173f55-eaed-43fe-a71e-63a11a6e5e9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\myFunc">
+      <UniqueIdentifier>{5b9def4b-d1f3-48dc-bd15-0ad9589509fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\myFunc">
+      <UniqueIdentifier>{7562c897-df33-490a-9f18-c56fab938c6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\math">
+      <UniqueIdentifier>{f916f466-167a-469b-aa89-a6b54cc6e3d1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -87,17 +93,20 @@
     <ClCompile Include="input\Input.cpp">
       <Filter>ソース ファイル\input</Filter>
     </ClCompile>
-    <ClCompile Include="math\Vector3.cpp">
-      <Filter>ソース ファイル\math</Filter>
+    <ClCompile Include="scene\GameScene.cpp">
+      <Filter>ソース ファイル\scene</Filter>
     </ClCompile>
-    <ClCompile Include="math\Vector4.cpp">
+    <ClCompile Include="myFunc\Affine.cpp">
+      <Filter>ソース ファイル\myFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Matrix4.cpp">
       <Filter>ソース ファイル\math</Filter>
     </ClCompile>
     <ClCompile Include="math\Vector2.cpp">
       <Filter>ソース ファイル\math</Filter>
     </ClCompile>
-    <ClCompile Include="scene\GameScene.cpp">
-      <Filter>ソース ファイル\scene</Filter>
+    <ClCompile Include="math\Vector3.cpp">
+      <Filter>ソース ファイル\math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -147,11 +156,14 @@
     <ClInclude Include="math\Vector3.h">
       <Filter>ヘッダー ファイル\math</Filter>
     </ClInclude>
-    <ClInclude Include="math\Vector4.h">
-      <Filter>ヘッダー ファイル\math</Filter>
-    </ClInclude>
     <ClInclude Include="scene\GameScene.h">
       <Filter>ヘッダー ファイル\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="myFunc\Affine.h">
+      <Filter>ヘッダー ファイル\myFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Matrix4.h">
+      <Filter>ヘッダー ファイル\math</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
